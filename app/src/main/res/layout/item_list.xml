@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+
+    android:clickable="true"
+    android:focusable="true"
+
+    card_view:cardCornerRadius="4dp"
+
+    card_view:cardElevation="15dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+
+            android:clickable="true"
+            android:focusable="true"
+
+            card_view:cardCornerRadius="4dp"
+
+            card_view:cardElevation="25dp">
+
+
+            <ImageView
+                android:id="@+id/list_avatar"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tictacicon" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/list_title"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/card_view_image"
+            android:text="Auto "
+            android:textAppearance="?attr/textAppearanceListItem"
+
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_desc"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_title"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/card_view_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Elobrate - about flora and Funa Here... -Sathya"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="#ff1ee119"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/list_price"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/list_desc"
+            android:layout_marginLeft="223dp"
+            android:layout_marginTop="-30dp"
+            android:layout_toRightOf="@+id/card_view_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="xx"
+            android:textColor="#E91E63"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnATC"
+            android:layout_width="116dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/list_desc"
+            android:layout_marginStart="-116dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/list_price"
+            android:text="Add To Cart"
+            android:textSize="8dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp"
+    card_view:cardCornerRadius="4dp"
+
+    card_view:cardElevation="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="158dp">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="113dp"
+            android:layout_height="95dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="18dp"
+            tools:srcCompat="@drawable/tictacicon" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="19dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="52dp"
+            android:text="TextView" />
+
+        <ScrollView
+            android:layout_width="242dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginBottom="0dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="206dp"
+                android:layout_height="41dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="9dp"
+                android:text="The quintessential tragedy and romance film everyone should watch at least once in their lifetime.
+
+Beautifully scored, written and produced, the relevance of Titanic remains, 23 years later. Precisely crafted with stunningly accurate historical detail and unmissable cinematography, combined with actors Leonardo DiCaprio and Kate Winslet's stunningly beautiful performance, where both actors were wonderfully suited to their roles." />
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="21dp"
+            android:text="TextView" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
